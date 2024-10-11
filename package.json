@@ -4,8 +4,8 @@
   "description": "tinder for developers",
   "main": "index.js",
   "scripts": {
-    "dev" : "nodemon src/app.js",
-    "start" : "node src/app.js"
+    "dev": "nodemon src/app.js",
+    "start": "node src/app.js"
   },
   "keywords": [
     "nodejs",
@@ -15,7 +15,7 @@
   "author": "Satish Rella",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.21.0" 
+    "express": "^4.21.0",
+    "mongoose": "^8.7.1"
   }
 }
- 
