@@ -12,3 +12,5 @@ Tech_Stack:
 - createed signup API to add data into database
 - pushed some documents using API call from postman
 - Error handles using try catch block
+- Adding the express as middleware
+- making the singup API dynamic to receive data from the end user
