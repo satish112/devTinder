@@ -16,4 +16,8 @@ Tech_Stack: (MERN - MongoDB, Express, React, Nodejs)
 - making the singup API dynamic to receive data from the end user
 - API - get user buy email - /user
 - API - Feed API - GET/feed - get all the users from the database - /feed
-- 
+- API - Delete user using by Id
+- API - Updated the user with EmailID
+- API level validations on patch request and signup API
+- Add API validation fro each field 
+- DATA Sanitizing - Add API validation for each field 
