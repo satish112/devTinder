@@ -15,7 +15,8 @@
   "author": "Satish Rella",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.21.0",
+    "bcrypt": "^5.1.1",
+    "express": "^4.21.1",
     "mongoose": "^8.7.1",
     "validator": "^13.12.0"
   }

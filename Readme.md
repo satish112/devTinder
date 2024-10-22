@@ -21,3 +21,8 @@ Tech_Stack: (MERN - MongoDB, Express, React, Nodejs)
 - API level validations on patch request and signup API
 - Add API validation fro each field 
 - DATA Sanitizing - Add API validation for each field 
+- VAlidate data in signup API (Create a helper/util function in seperate fodler)
+- Install bcrypt package
+- Create PasswordHash using bcrypt.hash & save the user is excrupted password
+- create login api 
+- compare passwords and throw errors if email or password is invalid 
