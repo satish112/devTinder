@@ -23,6 +23,17 @@ Tech_Stack: (MERN - MongoDB, Express, React, Nodejs)
 - DATA Sanitizing - Add API validation for each field 
 - VAlidate data in signup API (Create a helper/util function in seperate fodler)
 - Install bcrypt package
-- Create PasswordHash using bcrypt.hash & save the user is excrupted password
-- create login api 
-- compare passwords and throw errors if email or password is invalid 
+- Created PasswordHash using bcrypt.hash & save the user is excrupted password
+- created login api 
+- compared passwords and throw errors if email or password is invalid 
+- Installed cookei-parse
+- sent a dummy cookie to user 
+- created get/profile API and check if you get the cookie back 
+- Installed JWT (jsonwebtoken)
+- // In login APi, after email and password validation,  create a JWT token and send back to user in cookies
+- read the cookies inside your profile API and find the logged in user.
+- userAuth Middleware
+- Add the userAuth middleware in profile API and a new send connection request API
+- set the expiry of JWT token and cookies to 7 days
+- created userschema method to getJWT()
+- created userschema method to comaprepassword(passwordInputByUser)
