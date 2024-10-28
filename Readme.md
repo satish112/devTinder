@@ -37,3 +37,12 @@ Tech_Stack: (MERN - MongoDB, Express, React, Nodejs)
 - set the expiry of JWT token and cookies to 7 days
 - created userschema method to getJWT()
 - created userschema method to comaprepassword(passwordInputByUser)
+
+- Exploring the TinderAPi's
+- created the list of API's
+- grouped the multiple routes under respective routers
+- explored the documentation for express.router
+- created the route folder for managing auth, profile, request routers
+- created the authRouter, profileRouter, requestRouter
+- Imported the those routers in app.js
+
