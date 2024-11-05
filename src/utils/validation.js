@@ -17,4 +17,14 @@ const validateSignupdata = (req) =>{
 
 }
 
-module.exports = {validateSignupdata};
+const validatePatchData = (req) =>{
+    const Allowed_Methods = ['firstName', 'lastName','emailId','age','gender','photoUrl','about', 'skills']
+
+    isAllowedData = Object.keys(req.body).every(field => Allowed_Methods.includes(field))
+
+    return isAllowedData;
+}
+
+
+
+module.exports = {validateSignupdata, validatePatchData};

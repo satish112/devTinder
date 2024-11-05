@@ -46,3 +46,8 @@ Tech_Stack: (MERN - MongoDB, Express, React, Nodejs)
 - created the authRouter, profileRouter, requestRouter
 - Imported the those routers in app.js
 
+- create POST/logout API
+- create PATCH/profile/edit
+- Create PATCH/profile/passowrd (Forgot Password API)
+- Validated all data in every POST and PATCH API's
+
