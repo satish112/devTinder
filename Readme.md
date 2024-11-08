@@ -50,4 +50,16 @@ Tech_Stack: (MERN - MongoDB, Express, React, Nodejs)
 - create PATCH/profile/edit
 - Create PATCH/profile/passowrd (Forgot Password API)
 - Validated all data in every POST and PATCH API's
+- created connectionn request schema
+- created Send Conenction request API
+- Indexes in mongodb
+- schema.pre("save") function
+- Always think about the corner cases 
+
+
+- Written the POST API with proper validations for POST /request/review/:status/:requestId
+
+- Thought Process :- POST vs GET
+- Created GET /user/requests/received  API
+- created GET /user/connections API
 
