@@ -63,3 +63,16 @@ Tech_Stack: (MERN - MongoDB, Express, React, Nodejs)
 - Created GET /user/requests/received  API
 - created GET /user/connections API
 
+- Logic for GET /feed API
+- Explored the $nin, $ne, $or, $and  query operators
+
+- Pagination Added to our Feed API
+
+query_Params : 
+
+/feed?page=1&limit=10 => first 10 users 1-10
+
+.skip() - how many documents want to skip
+ & .limit() - how many documents want to limit 
+ 
+
