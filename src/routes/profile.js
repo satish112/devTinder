@@ -5,7 +5,7 @@ const { __esModule } = require('validator/lib/isAlpha');
 const { validatePatchData } = require('../utils/validation');
 const bcrypt = require('bcrypt');
 
-profileRouter.get('/profile', userAuth, async (req, res)=>{
+profileRouter.get('/profile/view', userAuth, async (req, res)=>{
     try{
         user = req.user
         res.send(user);
@@ -33,7 +33,7 @@ try{
     })
 
 } catch (err){
-    res.status(404).send("Error:"+ err.message);
+    res.status(400).send("Error:"+ err.message);
    }
     
 })

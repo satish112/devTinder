@@ -14,9 +14,9 @@ userRouter.get("/user/requests/received", userAuth, async (req, res)=>{
             status:"interested"
         }).populate("fromUserId", " firstName lastName about skills emailId photoUrl");
 
-        if(receivedRequests.length === 0){
-            return res.status(400).json({message:"There are no connection requests for you"})
-        }
+        // if(receivedRequests.length === 0){
+        //     return res.status(400).json({message:"There are no connection requests for you"})
+        // }
         res.json({
             message : "Data Fetched Successfully",
             data : receivedRequests
@@ -37,9 +37,8 @@ userRouter.get("/user/connections", userAuth, async (req, res)=>{
                     {fromUserId : loggedinUser._id, status: "accepted"},
                     {toUserId : loggedinUser._id, status : "accepted"}
                 ]
-            })
-            .populate("toUserId", "firstName lastName skills")
-            .populate("fromUserId", "firstName lastName skills");
+            }).populate("fromUserId", "firstName lastName skills age gender photoUrl emailId about")
+            .populate("toUserId", "firstName lastName skills age gender photoUrl emailId about");
 
             const data = getConnections.map(row => {
                 if (row.fromUserId._id.toString() === loggedinUser._id.toString()){
@@ -85,9 +84,9 @@ userRouter.get("/feed", userAuth, async(req, res)=>{
                     {_id: {$nin: Array.from(hideUsersFromFeed)}}
             ]
             
-        }).select("firstName lastName").skip(skip).limit(limit);
+        }).skip(skip).limit(limit);
 
-        res.json({message:"All the people in my database",
+        res.json({
             data: getpeople
         })
     }catch(err){
